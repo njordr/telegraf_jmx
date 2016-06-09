@@ -18,3 +18,10 @@ You also need to run it as root, so add this line in /etc/sudoers
 telegraf    ALL=NOPASSWD: /opt/telegraf_jmx/telegraf_jmx.sh
 ```
 
+The list file for the beans is format as follow:
+
+* fields semicolon separated
+* first field: bean domain and name
+* second field: bean attribute
+* third field: if the bean as a multi value output, a comma separated list of the value name
+* comment: # at the beginning of the line
